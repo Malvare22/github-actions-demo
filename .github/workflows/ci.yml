@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu lastest
+    steps:
+      - name: Checkout Mode
+        uses: actions/checkout@v4
+        
+      - name: List files
+        run: ls -la
